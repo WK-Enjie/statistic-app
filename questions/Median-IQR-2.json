@@ -1,0 +1,50 @@
+[
+  {
+    "id": "calc-iqr-01",
+    "question": "Find the Median and Interquartile Range (IQR) for the following data: 12, 15, 17, 20, 22, 25, 30",
+    "options": [
+      "Median: 20, IQR: 10",
+      "Median: 20, IQR: 18",
+      "Median: 17, IQR: 8",
+      "Median: 22, IQR: 10"
+    ],
+    "correct_index": 0,
+    "explanation": "N = 7 (odd). The Median is the middle value: 20. The lower half is 12, 15, 17 (Q1 = 15). The upper half is 22, 25, 30 (Q3 = 25). IQR = Q3 - Q1 = 25 - 15 = 10."
+  },
+  {
+    "id": "calc-iqr-02",
+    "question": "Find the IQR for this ordered data set: 4, 6, 8, 10, 12, 14, 16, 18",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct_index": 1,
+    "explanation": "N = 8 (even). Split into two halves: [4, 6, 8, 10] and [12, 14, 16, 18]. Q1 is the median of the lower half: (6+8)/2 = 7. Q3 is the median of the upper half: (14+16)/2 = 15. IQR = 15 - 7 = 8."
+  },
+  {
+    "id": "calc-iqr-03",
+    "question": "Class A has a Median score of 65 and an IQR of 12. Class B has a Median score of 60 and an IQR of 8. Which statement is true?",
+    "options": [
+      "Class B performed better on average and is more consistent.",
+      "Class A performed better on average and is more consistent.",
+      "Class A performed better on average, but Class B is more consistent.",
+      "Class B performed better on average, but Class A is more consistent."
+    ],
+    "correct_index": 2,
+    "explanation": "A higher Median means Class A performed better generally. A smaller IQR means the middle 50% of the data is closer together, meaning Class B's results are more consistent."
+  },
+  {
+    "id": "calc-iqr-04",
+    "question": "A cumulative frequency curve is drawn for 80 students. At which Cumulative Frequency (CF) values on the y-axis should you read the graph to find the Interquartile Range?",
+    "options": [
+      "CF = 20 and CF = 60",
+      "CF = 25 and CF = 75",
+      "CF = 0 and CF = 80",
+      "CF = 40 and CF = 80"
+    ],
+    "correct_index": 0,
+    "explanation": "To find Q1, read at N/4 = 80/4 = 20. To find Q3, read at 3N/4 = 3(80)/4 = 60. The IQR is the difference between the x-values at these two y-axis points."
+  }
+]

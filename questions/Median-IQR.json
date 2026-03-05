@@ -1,0 +1,50 @@
+[
+  {
+    "id": "con-iqr-01",
+    "question": "A dataset contains 50 normal values. If a single extreme outlier (e.g., a value of 1,000,000) is accidentally added to the dataset, which two measures are LEAST affected?",
+    "options": [
+      "Mean and Standard Deviation",
+      "Median and Range",
+      "Median and Interquartile Range (IQR)",
+      "Range and Interquartile Range (IQR)"
+    ],
+    "correct_index": 2,
+    "explanation": "Median and IQR are based purely on the physical 'position' of ordered data, not their actual numerical size. Therefore, they are highly robust and resistant to extreme obvious outliers. Range and Mean will change drastically."
+  },
+  {
+    "id": "con-iqr-02",
+    "question": "If 10 is subtracted from every value in a dataset, what happens to the Median and the Interquartile Range (IQR)?",
+    "options": [
+      "Median decreases by 10, IQR decreases by 10",
+      "Median decreases by 10, IQR remains unchanged",
+      "Median remains unchanged, IQR decreases by 10",
+      "Both remain exactly the same"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtracting a constant shifts the whole dataset down, so the Median drops by 10. However, the IQR is a measure of 'spread' or distance between points (Q3 - Q1). Since all points shifted equally, the distance between them is completely unchanged."
+  },
+  {
+    "id": "con-iqr-03",
+    "question": "If every value in a dataset is multiplied by 2, what happens to the Interquartile Range (IQR)?",
+    "options": [
+      "It remains unchanged.",
+      "It is multiplied by 2.",
+      "It is squared (multiplied by 4).",
+      "It increases by 2."
+    ],
+    "correct_index": 1,
+    "explanation": "Multiplying data scales both the values and the spread. Because Q3 is multiplied by 2 and Q1 is multiplied by 2, the gap between them (Q3 - Q1) is also exactly multiplied by 2."
+  },
+  {
+    "id": "con-iqr-04",
+    "question": "A student calculates the Median of a dataset to be 40. They discover they missed a value, and add a '0' to the dataset. What is guaranteed to happen to the Median?",
+    "options": [
+      "It will definitely drop to 0.",
+      "It will drastically decrease.",
+      "It will either decrease slightly or remain exactly the same.",
+      "It will remain completely unaffected."
+    ],
+    "correct_index": 2,
+    "explanation": "Adding a '0' simply adds one value to the lower half of the data. This pushes the middle position (N/2) half a step to the left. Depending on the values near the middle, the Median will either stay the same or drop slightly to the next available number."
+  }
+]
