@@ -1,3 +1,14 @@
+You are completely right. Pasting code blocks here and there can easily break the file if a single `</div>` tag is missed. 
+
+Here is your **complete, fully assembled, and corrected `index.html` file**. 
+
+It includes the missing "Advantages & Disadvantages" and "Drawing Inferences" sections, and it has the updated practice buttons ready to read the JSON files directly from your GitHub folder.
+
+Just copy this entire block and overwrite your current `index.html`.
+
+### `index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -441,6 +452,82 @@
         </div>
       </div>
     </div>
+
+    <!-- ADVANTAGES & DISADVANTAGES -->
+    <div class="section" id="sec-pros-cons">
+      <div class="card">
+        <h2>⚖️ Advantages & Disadvantages of Statistical Representations</h2>
+        <p>Understanding the strengths and weaknesses of each type helps you choose the right one and answer exam questions.</p>
+
+        <div id="prosConsContent">
+          <h3>📊 Summary Comparison Table</h3>
+          <div style="overflow-x:auto;">
+            <table>
+              <tr>
+                <th style="text-align:center;">Representation</th>
+                <th style="text-align:center;">Best For</th>
+                <th style="text-align:center;">Key Advantage</th>
+                <th style="text-align:center;">Key Disadvantage</th>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Bar Graph</td>
+                <td style="text-align:left; font-family:inherit;">Categorical / Discrete data</td>
+                <td style="text-align:left; font-family:inherit;">Easy to compare categories</td>
+                <td style="text-align:left; font-family:inherit;">Not for continuous data</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Pictogram</td>
+                <td style="text-align:left; font-family:inherit;">Simple categorical data</td>
+                <td style="text-align:left; font-family:inherit;">Visually engaging</td>
+                <td style="text-align:left; font-family:inherit;">Hard to show exact values</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Line Graph</td>
+                <td style="text-align:left; font-family:inherit;">Trends over time</td>
+                <td style="text-align:left; font-family:inherit;">Shows trends clearly</td>
+                <td style="text-align:left; font-family:inherit;">May imply continuity</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Pie Chart</td>
+                <td style="text-align:left; font-family:inherit;">Proportions of a whole</td>
+                <td style="text-align:left; font-family:inherit;">Shows proportions clearly</td>
+                <td style="text-align:left; font-family:inherit;">Hard to compare small slices</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Dot Diagram</td>
+                <td style="text-align:left; font-family:inherit;">Small discrete data sets</td>
+                <td style="text-align:left; font-family:inherit;">Shows every data point</td>
+                <td style="text-align:left; font-family:inherit;">Cluttered for large sets</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Histogram</td>
+                <td style="text-align:left; font-family:inherit;">Continuous grouped data</td>
+                <td style="text-align:left; font-family:inherit;">Shows distribution shape</td>
+                <td style="text-align:left; font-family:inherit;">Individual values lost</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Stem-and-Leaf</td>
+                <td style="text-align:left; font-family:inherit;">Small to medium numerical data</td>
+                <td style="text-align:left; font-family:inherit;">Retains all original values</td>
+                <td style="text-align:left; font-family:inherit;">Not for large data sets</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Cumulative Frequency</td>
+                <td style="text-align:left; font-family:inherit;">Finding median, quartiles, percentiles</td>
+                <td style="text-align:left; font-family:inherit;">Easy to read median & quartiles</td>
+                <td style="text-align:left; font-family:inherit;">Doesn't show individual frequencies</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-family:inherit;">Box-and-Whisker</td>
+                <td style="text-align:left; font-family:inherit;">Comparing data sets, spread</td>
+                <td style="text-align:left; font-family:inherit;">Shows 5-number summary at a glance</td>
+                <td style="text-align:left; font-family:inherit;">Doesn't show distribution shape details</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- MISINTERPRETATION -->
     <div class="section" id="sec-misinterpretation">
@@ -456,6 +543,55 @@
       </div>
     </div>
 
+    <!-- DRAWING INFERENCES -->
+    <div class="section" id="sec-inference">
+      <div class="card">
+        <h2>🔍 Drawing Inferences from Statistical Diagrams</h2>
+        <p>Drawing inferences means making conclusions or observations based on the data shown.</p>
+
+        <h3>What to Look For</h3>
+        <div class="step">
+          <span class="step-number">1</span>
+          <strong>Trends:</strong> Is the data increasing, decreasing, or staying constant?
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <strong>Clusters:</strong> Where is most of the data concentrated?
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <strong>Outliers:</strong> Are there any unusual values far from the rest?
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <strong>Comparisons:</strong> How do different groups compare?
+        </div>
+        <div class="step">
+          <span class="step-number">5</span>
+          <strong>Spread:</strong> Is the data tightly clustered or widely spread?
+        </div>
+        <div class="step">
+          <span class="step-number">6</span>
+          <strong>Symmetry / Skewness:</strong> Is the distribution symmetric or skewed?
+        </div>
+
+        <h3>Example Inference Statements</h3>
+        <div class="info-box tip">
+          <ul>
+            <li>"Most students scored between 60 and 79 marks."</li>
+            <li>"There is a general increasing trend in sales from January to June."</li>
+            <li>"The data is positively skewed, indicating most values are on the lower end."</li>
+            <li>"Student A was more consistent as shown by the smaller IQR."</li>
+            <li>"The obvious outlier at 15 suggests this could be an error or unusual result."</li>
+          </ul>
+        </div>
+
+        <h3>Practice: What can you infer?</h3>
+        <button class="btn btn-primary btn-sm" onclick="generateInferencePractice()">Generate Practice Scenario</button>
+        <div id="inferencePractice"></div>
+      </div>
+    </div>
+
     <!-- PRACTICE QUESTIONS -->
     <div class="section" id="sec-practice">
       <div class="card">
@@ -467,7 +603,6 @@
         </div>
         
         <div class="tab-content active" id="pq-mcq">
-          <!-- JSON Fetching MCQ Buttons -->
           <div style="margin-bottom: 20px;">
             <p style="font-weight:600; margin-bottom:8px;">Select a Topic:</p>
             <div class="btn-group" id="bankButtons">
@@ -476,16 +611,24 @@
                 📚 Mixed Basics
               </button>
               
-              <!-- PASTE YOUR GITHUB RAW URL HERE -->
               <button class="btn btn-secondary btn-sm" 
-                      onclick="loadMCQBank('https://raw.githubusercontent.com/YOUR_GITHUB_NAME/YOUR_REPO/main/questions/transformations_practice.json', this)">
-                🔄 Data Transformations
+                      onclick="loadMCQBank('questions/calc_iqr_median.json', this)">
+                🧮 Calc: IQR & Median
               </button>
               
-              <!-- PASTE YOUR GITHUB RAW URL HERE -->
               <button class="btn btn-secondary btn-sm" 
-                      onclick="loadMCQBank('https://raw.githubusercontent.com/YOUR_GITHUB_NAME/YOUR_REPO/main/questions/outliers_and_groups.json', this)">
-                ⚠️ Outliers & Groups
+                      onclick="loadMCQBank('questions/calc_mean_sd.json', this)">
+                🧮 Calc: Mean & SD
+              </button>
+
+              <button class="btn btn-secondary btn-sm" 
+                      onclick="loadMCQBank('questions/concept_iqr_median.json', this)">
+                🧠 Concept: IQR & Outliers
+              </button>
+
+              <button class="btn btn-secondary btn-sm" 
+                      onclick="loadMCQBank('questions/concept_mean_sd.json', this)">
+                🧠 Concept: SD & Shifts
               </button>
             </div>
           </div>
@@ -531,3 +674,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+```
