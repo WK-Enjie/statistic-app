@@ -428,11 +428,15 @@
           <div class="comparison-grid">
             <div class="data-input-section">
               <label>Data Set A:</label>
-              <textarea id="compDataA">65, 70, 72, 68, 75, 71, 69</textarea>
+              <textarea id="compDataA" rows="3">65, 70, 72, 68, 75, 71, 69</textarea>
+              <label style="margin-top:6px;">Label A:</label>
+              <input type="text" id="compLabelA" value="Class A">
             </div>
             <div class="data-input-section">
               <label>Data Set B:</label>
-              <textarea id="compDataB">50, 85, 90, 45, 72, 60, 88</textarea>
+              <textarea id="compDataB" rows="3">50, 85, 90, 45, 72, 60, 88</textarea>
+              <label style="margin-top:6px;">Label B:</label>
+              <input type="text" id="compLabelB" value="Class B">
             </div>
           </div>
           <button class="btn btn-primary" onclick="compareDataSets()">⚖️ Compare Data Sets</button>
@@ -663,5 +667,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
